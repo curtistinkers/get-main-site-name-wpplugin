@@ -1,0 +1,24 @@
+{
+    "schema": "https://getcomposer.org/schema.json",
+    "name": "curtistinkers/get-main-site-name",
+    "description": "A simple package to get the main site name in a WordPress multisite installation.",
+    "type": "wordpress-muplugin",
+    "keywords": [ "wordpress-muplugin", "get-main-site-name" ],
+    "homepage": "https://github.com/curtistinkers/get-main-site-name-wpplugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "curtistinkers",
+            "email": "curtistinkers.commit@gmail.com",
+            "homepage": "https://curtistinkers.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/curtistinkers/get-main-site-name-wpplugin/issues",
+        "wiki":   "https://github.com/curtistinkers/get-main-site-name-wpplugin/wiki",
+        "source": "https://github.com/curtistinkers/get-main-site-name-wpplugin"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
