@@ -3,7 +3,7 @@
  * Plugin Name: Get Main Site Name
  * Plugin URI:  https://curtistinkers.com/
  * Description: Helper function to get the main site's name in a WordPress Multisite setup.
- * Version:     0.1.0
+ * Version:     1.0.0
  * Author:      curtistinkers
  * Author URI:  https://curtistinkers.com/
  * Text Domain: get-main-site-name
@@ -39,7 +39,7 @@ if ( ! function_exists( 'get_main_site_name_helper' ) ) {
             return get_bloginfo( 'name' );
         }
 
-        $main_site_id = SITE_ID_CURRENT_SITE ?? 1;
+        $main_site_id = defined( 'SITE_ID_CURRENT_SITE' ) ? SITE_ID_CURRENT_SITE : 1;
         if ( function_exists( 'get_network' ) ) {
             $network = get_network();
             if ( $network && isset( $network->site_id ) ) {
